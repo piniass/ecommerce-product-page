@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav nav">
+      <img src="images/logo.svg" alt="Logo Sneaker" class="nav__img">
+      <ul class="nav__ul">
+        <li class="nav__ul--li"><a href="#" class="nav__ul--a">Collections</a></li>
+        <li class="nav__ul--li"><a href="#" class="nav__ul--a">Men</a></li>
+        <li class="nav__ul--li"><a href="#" class="nav__ul--a">Women</a></li>
+        <li class="nav__ul--li"><a href="#" class="nav__ul--a">About</a></li>
+        <li class="nav__ul--li"><a href="#" class="nav__ul--a">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <nav class="header__nav img">
+      <div class="header_nav--carrito carrito">
+        <img src="images/icon-cart.svg" alt="Car" class="img__cart">
+        <div class="carrito-container " id="carrito-container">
+          <p class="carrito__titulo">Cart</p>
+          <hr>
+          <div class="carrito-car">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" class="carrito__img">
+            <div class="carrito-precio precio">
+              <p>Fall Limited Edition Sneakers</p>
+              <div class="precio__cantidad">
+                <p class="precio__carrito--p">125 x </p>
+                <p class="precio__carrito--cantidad">0</p>
+                <p class="precio__carrito--total">375</p>
+              </div>
+            </div>
+            <img src="images/icon-delete.svg" alt="" class="precio__delete">
+
+          </div>
+          <button class="carrito__button">Checkout</button>
+        </div>
+      </div>
+      
+      <img src="images/image-avatar.png" alt="Avatar" class="img__avatar">
+    </nav>
+  </header>
+  
+  <article class="article">
+    <hr class="section__hr">
+  </article>
+  <section class="contenedor">
+    <article class="contenedor__lightbox">
+      <div class="contanedor__lightbox--div">
+        <div class="flechas-mobile">
+          <img src="images/icon-previous.svg" alt="" id="prev-mobile">
+          <img src="images/icon-next.svg" alt="" id="next-mobile">
+        
+        </div>
+        <article class="lightbox">
+          <img src="images/image-product-1.jpg" alt="#" class="lightbox__img--main">
+        </article>
+        <article class="lightbox__gallery">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" class="lightbox__img--thumb">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" class="lightbox__img--thumb">
+          <img src="images/image-product-3-thumbnail.jpg" alt="" class="lightbox__img--thumb">
+          <img src="images/image-product-4-thumbnail.jpg" alt="" class="lightbox__img--thumb">
+        </article>
+      </div>
+      
+    </article>
+    
+    <article class="contenedor__articulo">
+      <article class="articulo">
+        <p class="articulo__p--color">Sneaker Company</p>
+        <h1 class="articulo__h1">Fall Limited Edition Sneakers</h1>
+        <p class="articulo__p">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <section class="articulo--precio precio">
+          <div class="precio__contenedor">
+            <p class="precio__nuevo">$125.00</p>
+          <p class="precio__descuento">50%</p>
+          </div>
+          
+          <p class="precio__antes">$250.00</p>
+        </section>
+        <section class="articulo__botones">
+          <div class="articulo__botones--contenedor botones">
+            <button class="botones__quitar">-</button>
+            <p class="botones__cantidad">0</p>
+            <button class="botones__aniadir">+</button>
+          </div>
+          <button class="articulo__botones--carrito">
+            <img src="./images/icon-cart.svg" alt="" class="carrito" >Add to cart
+          </button>
+        </section>
+      </article>
+    </article>
+    
+    <div class="lightbox__container">
+      <div class="container__final">
+        <div class="flechas">
+          <img src="images/icon-previous.svg" alt="" id="prev">
+          <img src="images/icon-next.svg" alt="" id="next">
+        </div>
+        <img src="images/icon-close.svg" alt="" id="close">
+      <article class="lightbox__img">
+        <img src="images/image-product-1.jpg" alt="#" class="lightbox__img--contendora">
+      </article>
+      <article class="lightbox__gallery">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="" class="lightbox__img--light">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="" class="lightbox__img--light">
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="lightbox__img--light">
+        <img src="images/image-product-4-thumbnail.jpg" alt="" class="lightbox__img--light">
+      
+      </div>
+      </article>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Miguel Piñan Barberan</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
